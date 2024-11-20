@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozem Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Design your Reservoir</h1>
+    </header>
+
+    <div class="container">
+        <div class="transparent-box">
+            <div class="input-section">
+                <h2>Input Data</h2>
+                <div class="input-box">
+                    <label for="luasWilayah">Luas Wilayah:</label>
+                    <input type="number" id="luasWilayah" placeholder="Masukkan luas wilayah">
+                    <select id="satuanLuasWilayah">
+                        <option value="m2" selected>m²</option>
+                        <option value="ha">Ha</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="luasTerpakai">Luas Terpakai:</label>
+                    <input type="number" id="luasTerpakai" placeholder="Masukkan luas terpakai">
+                    <select id="satuanLuasTerpakai">
+                        <option value="m2" selected>m²</option>
+                        <option value="ha">Ha</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="lokasi">Pilih Lokasi:</label>
+                    <select id="lokasi">
+                        <option value="" disabled selected>Pilih lokasi</option>
+                        <option value="utara">Surabaya Utara</option>
+                        <option value="selatan">Surabaya Selatan</option>
+                        <option value="timur">Surabaya Timur</option>
+                        <option value="barat">Surabaya Barat</option>
+                    </select>
+                </div>
+                <button id="hitungButton">Hitung</button>
+            </div>
+        </div>
+
+        <div class="transparent-box">
+            <div id="outputSection">
+                <h2>Hasil Perhitungan</h2>
+                <p id="outputLuas"></p>
+                <p id="outputKoef"></p>
+                <p id="outputVolume"></p>
+                <div class="dimension-section">
+                    <h3>Dimensi Bozem</h3>
+                    <div>
+                        <label for="panjang">Panjang (m):</label>
+                        <input type="number" id="panjang" step="0.1">
+                    </div>
+                    <div>
+                        <label for="lebar">Lebar (m):</label>
+                        <input type="number" id="lebar" step="0.1">
+                    </div>
+                    <div>
+                        <label for="tinggi">Tinggi (m):</label>
+                        <input type="number" id="tinggi" step="0.1">
+                    </div>
+                </div>
+            </div>
+            <div id="saranSection">
+                <p id="saranMaterial">Material yang disarankan: </p>
+                <p id="peringatan">Peringatan akan muncul di sini.</p>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

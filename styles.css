@@ -1,0 +1,108 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background: black;
+    transition: background 1s ease-in-out;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: white;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* Spacing for header */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Transparent Box */
+.transparent-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Input and Output Sections */
+.input-section, #outputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-box, .dimension-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+label {
+    flex: 1;
+}
+
+input, select, button {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#saranSection {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 10px;
+}
+
+#saranMaterial, #peringatan {
+    font-size: 16px;
+    margin: 5px 0;
+}
